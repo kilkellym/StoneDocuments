@@ -1,20 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <RevitAddIns>
   <AddIn Type="Command">
-    <Text>Command StoneDocuments</Text>
-    <Description>Some description for StoneDocuments</Description>
+    <Text>Check Elements</Text>
+    <Description>Checks the elements on a given schedule</Description>
     <Assembly>StoneDocuments.dll</Assembly>
-    <FullClassName>StoneDocuments.Command</FullClassName>
-    <ClientId>68add07c-03de-4547-88f3-19652b361490</ClientId>
-    <VendorId>T Edward</VendorId>
-    <VendorDescription>T Edward Coder</VendorDescription>
+    <FullClassName>StoneDocuments.CmdCheck</FullClassName>
+    <ClientId>a83eb751-83f9-4438-9b1e-6ab64778eea1</ClientId>
+    <VendorId>RBA Inc</VendorId>
+    <VendorDescription>Stone Documents</VendorDescription>
+  </AddIn>
+  <AddIn Type="Command">
+    <Text>Reset Elements</Text>
+    <Description>Resets the element overrides</Description>
+    <Assembly>StoneDocuments.dll</Assembly>
+    <FullClassName>StoneDocumentsParts.CmdReset</FullClassName>
+    <ClientId>a83eb751-83f9-4438-9b1e-6ab64778e679</ClientId>
+    <VendorId>RBA Inc</VendorId>
+    <VendorDescription>Stone Documents</VendorDescription>
   </AddIn>
   <AddIn Type="Application">
-    <Name>Application StoneDocuments</Name>
+    <Name>Application StoneDocumentsParts</Name>
     <Assembly>StoneDocuments.dll</Assembly>
-    <FullClassName>StoneDocuments.App</FullClassName>
-    <ClientId>3734cac2-cc00-4e7b-aa9e-bc0128b43d91</ClientId>
-    <VendorId>T Edward</VendorId>
-    <VendorDescription>T Edward Coder</VendorDescription>
+    <FullClassName>StoneDocumentsParts.App</FullClassName>
+    <ClientId>27f7f42f-687c-43bc-905a-77773178a8f3</ClientId>
+    <VendorId>RBA Inc</VendorId>
+    <VendorDescription>Stone Documents</VendorDescription>
   </AddIn>
 </RevitAddIns>

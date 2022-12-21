@@ -13,7 +13,7 @@ using System.Diagnostics;
 namespace StoneDocuments
 {
     [Transaction(TransactionMode.Manual)]
-    public class Command : IExternalCommand
+    public class cmdCheck : IExternalCommand
     {
         public Result Execute(
           ExternalCommandData commandData,
