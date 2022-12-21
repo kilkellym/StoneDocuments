@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command StoneDocuments</Text>
+    <Description>Some description for StoneDocuments</Description>
+    <Assembly>StoneDocuments.dll</Assembly>
+    <FullClassName>StoneDocuments.Command</FullClassName>
+    <ClientId>68add07c-03de-4547-88f3-19652b361490</ClientId>
+    <VendorId>T Edward</VendorId>
+    <VendorDescription>T Edward Coder</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application StoneDocuments</Name>
+    <Assembly>StoneDocuments.dll</Assembly>
+    <FullClassName>StoneDocuments.App</FullClassName>
+    <ClientId>3734cac2-cc00-4e7b-aa9e-bc0128b43d91</ClientId>
+    <VendorId>T Edward</VendorId>
+    <VendorDescription>T Edward Coder</VendorDescription>
+  </AddIn>
+</RevitAddIns>
