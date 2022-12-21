@@ -13,7 +13,7 @@
     <Text>Reset Elements</Text>
     <Description>Resets the element overrides</Description>
     <Assembly>StoneDocuments.dll</Assembly>
-    <FullClassName>StoneDocumentsParts.CmdReset</FullClassName>
+    <FullClassName>StoneDocuments.CmdReset</FullClassName>
     <ClientId>a83eb751-83f9-4438-9b1e-6ab64778e679</ClientId>
     <VendorId>RBA Inc</VendorId>
     <VendorDescription>Stone Documents</VendorDescription>
@@ -21,7 +21,7 @@
   <AddIn Type="Application">
     <Name>Application StoneDocumentsParts</Name>
     <Assembly>StoneDocuments.dll</Assembly>
-    <FullClassName>StoneDocumentsParts.App</FullClassName>
+    <FullClassName>StoneDocuments.App</FullClassName>
     <ClientId>27f7f42f-687c-43bc-905a-77773178a8f3</ClientId>
     <VendorId>RBA Inc</VendorId>
     <VendorDescription>Stone Documents</VendorDescription>
