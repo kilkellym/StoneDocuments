@@ -64,7 +64,6 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.CancelHandler(this.button2_Click);
             // 
             // label2
             // 

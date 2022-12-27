@@ -13,14 +13,16 @@ namespace StoneDocuments
         private RequestHandler m_Handler;
         private CancelHandler c_Handler;
         private ExternalEvent m_ExternalEvent;
+        private ExternalEvent c_ExternalEvent;
 
-        public checkForm(ExternalEvent exEvent, RequestHandler rHandler, CancelHandler cHandler, int count)
+        public checkForm(ExternalEvent exEvent, RequestHandler rHandler, CancelHandler cHandler, ExternalEvent cEvent, int count)
         {
             InitializeComponent();
 
             m_Handler = rHandler;
             c_Handler = cHandler;
             m_ExternalEvent = exEvent;
+            c_ExternalEvent = cEvent;
             label2.Text = count.ToString() + " elements selected";
         }
 

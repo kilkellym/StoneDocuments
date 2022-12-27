@@ -63,7 +63,11 @@ namespace StoneDocuments
             // create handler and event then open form
             RequestHandler handler = new RequestHandler();
             ExternalEvent exEvent = ExternalEvent.Create(handler);
-            checkForm curForm = new checkForm(exEvent, handler, elemList.Count);
+            CancelHandler cHandler= new CancelHandler();
+            ExternalEvent cEvent = ExternalEvent.Create(cHandler);
+
+
+            checkForm curForm = new checkForm(exEvent, handler, cHandler, cEvent, elemList.Count);
             curForm.TopMost = true;
             curForm.Show();
 
@@ -116,17 +120,26 @@ namespace StoneDocuments
 
     public class CancelHandler : IExternalEventHandler
     {
-       UIDocument uidoc = uiapp.ActiveUIDocument;
-       Document doc = uidoc.Document;
+        public String GetName()
+        {
+            return "Cancel and close form";
+        }
 
-       ICollection<ElementId> selElements = uidoc.Selection.GetElementIds();
+        public void Execute(UIApplication uiapp)
+        {
 
-       selElements.Clear();
+            UIDocument uidoc = uiapp.ActiveUIDocument;
+            Document doc = uidoc.Document;
 
-       uidoc.Selection.SetElementIds(selElements);
+            ICollection<ElementId> selElements = uidoc.Selection.GetElementIds();
 
-       uidoc.RefreshActiveView();
+            selElements.Clear();
 
-       return;
+            uidoc.Selection.SetElementIds(selElements);
+
+            uidoc.RefreshActiveView();
+
+            return;
+        }        
     }
 }
