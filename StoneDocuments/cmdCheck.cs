@@ -113,4 +113,17 @@ namespace StoneDocuments
             return;
         }
     }
+
+    public class RequestHandler : IExternalEventHandler
+    {
+       UIDocument uidoc = uiapp.ActiveUIDocument;
+
+       selElements.Clear();
+
+       uidoc.Selection.SetElementIds(selElements);
+
+       uidoc.RefreshActiveView();
+
+       return;
+    }
 }
