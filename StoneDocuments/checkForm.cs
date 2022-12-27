@@ -34,7 +34,7 @@ namespace StoneDocuments
 
         private void button2_Click(object sender, EventArgs e)
         {           
-            m_ExternalEvent.Raise();
+            c_ExternalEvent.Raise();
             this.Close();
         }
 
