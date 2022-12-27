@@ -114,9 +114,12 @@ namespace StoneDocuments
         }
     }
 
-    public class RequestHandler : IExternalEventHandler
+    public class CancelHandler : IExternalEventHandler
     {
        UIDocument uidoc = uiapp.ActiveUIDocument;
+       Document doc = uidoc.Document;
+
+       ICollection<ElementId> selElements = uidoc.Selection.GetElementIds();
 
        selElements.Clear();
 
