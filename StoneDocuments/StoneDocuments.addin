@@ -19,7 +19,7 @@
     <VendorDescription>Stone Documents</VendorDescription>
   </AddIn>
   <AddIn Type="Application">
-    <Name>Application StoneDocumentsParts</Name>
+    <Name>Application Stone Documents</Name>
     <Assembly>StoneDocuments.dll</Assembly>
     <FullClassName>StoneDocuments.App</FullClassName>
     <ClientId>27f7f42f-687c-43bc-905a-77773178a8f3</ClientId>
